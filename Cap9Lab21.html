@@ -1,0 +1,46 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/HTML; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="arquivo.css">
+<title>Validando Formulários</title>
+</HEAD>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+function validaForm(){
+//VALIDAÇÃO DO CAMPO NOME
+if (document.form1.nome.value.length <= 1){
+alert("O campo nome não pode ficar em branco - Digite seu nome.");
+form1.nome.focus();
+return false;
+}
+//VALIDAÇÃO DO CAMPO EMAIL
+if (document.form1.email.value.length <= 1){
+alert("O campo e-mail não pode ficar em branco - Digite seu e-mail.");
+form1.email.focus();
+return false;
+}
+//VALIDAÇÃO DO CAMPO FONE
+if (document.form1.fone.value.length <= 1){
+alert("O campo telefone não pode ficar em branco - Digite seu telefone.");
+form1.fone.focus();
+return false;
+}
+return true;
+}
+</SCRIPT>
+<BODY BGCOLOR="#C1C1C1">
+<A HREF="index.htm" style="margin-left: 600px; color:#f60; font-family: Verdana;" >Voltar</A>
+<br>
+<FONT SIZE="2" FACE="arial">
+<b>
+Preencha os dados do formulário abaixo. Os campos assinalados com (*) não podem ficar em branco
+</b>
+<FORM NAME="form1" action=mailto:olimpiogilberto@gmail.com.br enctype="text/plain" onSubmit="return validaForm(this);">
+
+<P>(*)Nome:<INPUT style="margin-left: 20px;" TYPE="TEXT" NAME="nome"></P>
+<P>(*)Endereço:<INPUT TYPE="TEXT" NAME="end"></P>    
+<P>(*)E-mail:<INPUT style="margin-left: 18px;" TYPE="TEXT" NAME="email"></P>    
+<P>(*)Fone:<INPUT style="margin-left: 27px;" TYPE="TEXT" NAME="fone"></P>    
+<INPUT TYPE="SUBMIT" VALUE="Enviar">
+</FORM>
+</BODY>
+</HTML>

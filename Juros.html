@@ -1,0 +1,37 @@
+<html>
+	<head><title></title></head>
+	<script language="javascript">
+	
+	function calcula(){
+	   
+		var vlrEmprestado=parseFloat(form.vlrInicial.value);
+		var qtdTempo=(form.periodo.value);
+		
+		form.vlrFinal.value = vlrEmprestado * qtdTempo;
+		
+	}
+	
+		function validaForm(){
+		if(form.vlrInicial.value == "" || form.vlrInicial.value.length < 1){
+		   alert('Digite o valor do Emprestimo!!');
+		   return false;
+		 }
+		 
+		if(form.periodo.value == "" || form.periodo.value.length < 1){
+		   alert('Digite o período do Empréstimo!!');
+		   return false;
+		 }
+	}
+</script>
+<body>
+<br><br><br>
+<hr>
+<form name="form">
+<p>	Valor Emprestado: <input type=text value="" name="vlrInicial"></p>
+<p>	Período................: <input type=text value="" name="periodo"></p>
+<p> Valor Final..........: <input type=text value="" name="vlrFinal"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type=button value="calcular" onClick=calcula();><input type=reset value="limpar"></p>	
+</form>
+
+</body>
+</html>

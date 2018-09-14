@@ -1,0 +1,45 @@
+
+<!-- saved from url=(0056)http://www.oliviero.com.br/SerieWeb/javascript/Index.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<!-- Título da HomePage -->
+<title>Sejam ben vindos ao JavaScript</title>
+</head>
+<body bgcolor="#87cefa">
+
+<script language="JAVASCRIPT">
+var dataHora,xHora,xDia,dia,mes,ano,txtSaudacao;
+dataHora = new Date();
+xHora = dataHora.getHours();
+if (xHora >= 0 && xHora < 12) {txtSaudacao = "Bom Dia!"}
+if (xHora >= 12 && xHora < 18) {txtSaudacao = "Boa Tarde!"}
+if (xHora >= 18 && xHora <= 23) {txtSaudacao = "Boa Noite!"}
+xDia = dataHora.getDay();
+diaSemana = new Array(7);
+diaSemana[0] = "Domingo";
+diaSemana[1] = "Segunda-feira";
+diaSemana[2] = "Terça-feira";
+diaSemana[3] = "Quarta-feira";
+diaSemana[4] = "Quinta-Feira";
+diaSemana[5] = "Sexta-Feira";
+diaSemana[6] = "Sábado";
+dia = dataHora.getDate();
+mes = dataHora.getMonth();
+mesDoAno = new Array(12);
+mesDoAno[0] = "janeiro";
+mesDoAno[1] = "fevereiro";
+mesDoAno[2] = "março";
+mesDoAno[3] = "abril";
+mesDoAno[4] = "maio";
+mesDoAno[5] = "junho";
+mesDoAno[6] = "julho";
+mesDoAno[7] = "agosto";
+mesDoAno[8] = "setembro";
+mesDoAno[9]= "outubro";
+mesDoAno[10]= "novembro";
+mesDoAno[11] = "dezembro";
+ano = dataHora.getFullYear();
+document.write("<p>" + txtSaudacao + " " + diaSemana[xDia] + ", " + dia + " de " + mesDoAno[mes] + " de " + ano + "</p>");
+</script>
+
+
+</body></html>

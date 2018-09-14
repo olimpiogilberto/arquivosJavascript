@@ -1,0 +1,22 @@
+<html>
+	<head><title></title></head>
+	<script language="javascript">
+	
+	function calcula(){
+		var valor1=parseFloat(formulario.v1.value);
+		var valor2=parseFloat(formulario.v2.value);
+		formulario.soma.value=valor1+valor2;
+	}
+
+</script>
+<body>
+<CENTER>
+<form name="formulario">
+<p>	VALOR1 <input type=text value="" name="v1"></p>
+<p>	VALOR2 <input type=text value="" name="v2"></p>
+<p><br>SOMA&nbsp;&nbsp;&nbsp;&nbsp;  <input type=text value="" name="soma"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type=button value="calcular" onClick=calcula();><input type=reset value="limpar"></p>	
+</form>
+</CENTER>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="arquivo.css">
+<title>Trabalhando com funções</title>
+<SCRIPT LANGUAGE=JAVASCRIPT>
+msgStatus = "Seja Bem vindo à minha Hoje Page - Série Faça um Site    ";
+x = 0;
+function StatusScroll()
+{
+window.status =
+msgStatus.substring(x,msgStatus.length) +
+msgStatus.substring(0,x-1) 
+if (x < msgStatus.length)
+{x++}
+else{x = 0}
+setTimeout("StatusScroll()",100)
+}
+</SCRIPT>
+</head>
+<body bgcolor="#c1c1c1" onLoad = "StatusScroll()">
+<p style="color:#00f; margin-top: 50px; margin-left: 100px; font-weight: bold; font-family: Verdana;" >
+Observe a mensagem scrolando no rodapé da página
+</p>
+
+<FORM style="margin-left: 100px;">
+
+    <A HREF="index.htm" style="margin-left: 10px; color:#f60; font-family: Verdana;" >Voltar</A>
+</FORM>
+</body>
+</html>

@@ -1,0 +1,48 @@
+
+<!-- saved from url=(0056)http://www.oliviero.com.br/SerieWeb/javascript/Index.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<!-- Título da HomePage -->
+<title>Imprimindo o dia da Semana</title>
+</head>
+<body bgcolor="#EAEAD5">
+<script language="JAVASCRIPT">
+Hoje = new Date();
+xDia = Hoje.getDay();
+diaSemana = new Array(7);
+pratoDia = new Array(7);
+precoPrato = new Array(7);
+//Dados da matriz diaSemana;
+diaSemana[0] = "Domingo";
+diaSemana[1] = "Segunda-feira";
+diaSemana[2] = "Terça-feira";
+diaSemana[3] = "Quarta-feira";
+diaSemana[4] = "Quinta-Feira";
+diaSemana[5] = "Sexta-Feira";
+diaSemana[6] = "Sábado";
+//Dados da matriz pratoDia;
+pratoDia[0] = "Lasanha a quatro queijos";
+pratoDia[1] = "Frango ao molho Madeira";
+pratoDia[2] = "Arroz à Grega";
+pratoDia[3] = "Feijoada à Moda da Casa";
+pratoDia[4] = "Nhoque Paulista";
+pratoDia[5] = "Bacalhau ao Forno";
+pratoDia[6] = "Feijão Branco";
+//Dados da matriz precoPrato;
+precoPrato
+precoPrato[0] = "R$ 12,20";
+precoPrato[1] = "R$ 10,00";
+precoPrato[2] = "R$ 9,40";
+precoPrato[3] = "R$ 11,20";
+precoPrato[4] = "R$ 8,50";
+precoPrato[5] = "R$ 15,20";
+precoPrato[6] = "R$ 10,00";
+document.write("<font face='arial' size='1' color='black'> A variável xDia contém o número:" + xDia + "<br></font>");
+document.write("<p><b>" + "Hoje é: " + diaSemana[xDia] + "</b></p>");
+document.write("<p><b>" + "Nossa sugestão para hoje é: " + pratoDia[xDia] + "</b></p>");
+document.write("<p><b>" + "Preço: " + precoPrato[xDia] + "</b></p>");
+</script>
+<BR>
+
+    <A HREF="Cap8Lab11.html" style="margin-left: 10px; color:#f60; font-family: Verdana;" >Voltar</A>
+</body>
+</html>

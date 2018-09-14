@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Movimento em Coordenadas</title>
+
+<script type="text/javascript" src="lib/anima.js"></script>
+
+</head>
+<body>
+
+<img id="bola" src="imagens/bola.gif" 
+style="position: absolute; top: 40px; left: 50px">
+
+<script type="text/javascript">
+<!--
+  var contar = 0;
+
+  var arrayX = new Array(200, 120, 84, 320, 31, 18);
+  var arrayY = new Array(10, 75, 232, 127, 97, 200);
+
+  function mover(){
+    var x = arrayX[contar];
+    var y = arrayY[contar];
+    
+    if(contar < (arrayX.length - 1)){ 
+      contar++;
+    } 
+     
+    moverPara(bola, x, y);
+  }
+  
+  window.setInterval("mover()", 600); 
+//-->
+</script>
+
+</body>
+</html>

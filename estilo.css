@@ -1,0 +1,44 @@
+body {
+color: #000;
+background: #000000;
+font-weight: bold; 
+text-transform: lowercase;
+/**margin-top: 65px;**/
+margin-left: 100px;
+font-family: "Courier New";
+}
+p {
+font-size: 36px;  
+color: #000099;
+font-family: Verdana;
+}
+h3 {
+font-family: "Courier New";
+color: #a0990f;
+}
+	
+a:link {
+	color: #00aa0a;
+	text-decoration:none;
+	font-style: italic;
+
+}
+
+a:visited {
+	color: #00aa0a;
+	text-decoration:none;
+	font-style: italic;
+}
+
+a:active {
+	color: 000;
+	background-color: #fff;
+	text-decoration:none;
+	font-style: italic;
+}
+
+a:hover {
+	color: #ADFF2F;
+	background-color: #000;
+	text-transform: uppercase;
+}
